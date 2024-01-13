@@ -25,3 +25,10 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+.h1-gradient {
+  background: linear-gradient(180deg, #FFF 0%, #E1E1E1 10.51%, #FFF 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block; /* Adicionando esta linha */
+}
