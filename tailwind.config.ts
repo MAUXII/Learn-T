@@ -18,6 +18,8 @@ const config: Config = {
       colors:{
         'white': '#f8f8f8',
         'black': '#060606',
+        'branco': '#F1EDED',
+        'preto' : '#0a0a0a'
       }
     },
   },
@@ -26,5 +28,6 @@ const config: Config = {
 require('preline/plugin'),
 
   ],
+  darkMode: 'class',
 }
 export default config
