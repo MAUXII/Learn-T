@@ -1,8 +1,9 @@
-import createGlobe from "cobe";
-import { useEffect, useRef } from "react";
-import { useSpring } from "react-spring";
+import createGlobe from 'cobe';
+import { useEffect, useRef } from 'react';
+import { useSpring } from 'react-spring';
+import { useDarkMode } from '../Dark'; // Certifique-se de importar o hook useDarkMode
 
-export function Cobe() {
+export const Cobe: React.FC = () => {
   const canvasRef = useRef<HTMLCanvasElement | null>(null);
   const pointerInteracting = useRef<number | null>(null);
   const pointerInteractionMovement = useRef(0);
@@ -15,6 +16,8 @@ export function Cobe() {
       precision: 0.001,
     },
   }));
+
+  const { darkMode } = useDarkMode(); // Use o hook useDarkMode para obter o estado do modo claro/escuro
 
   useEffect(() => {
     let phi = 0;
@@ -29,31 +32,28 @@ export function Cobe() {
     window.addEventListener('resize', onResize);
     onResize();
 
-    const globe = createGlobe(canvasRef.current!, { // Asserting that canvasRef.current is not null
+    const globe = createGlobe(canvasRef.current!, {
       devicePixelRatio: 2,
       width: width * 2,
       height: width * 2,
       phi: 0,
       theta: 0.3,
-      dark: 1,
+      dark: darkMode ? 1 : 0,
       diffuse: 3,
       mapSamples: 16000,
       mapBrightness: 40,
-      baseColor: [6 / 255, 6 / 255, 6 / 255], // #060606
-      markerColor: [251 / 255, 200 / 255, 255 / 255], // #FBC8FF
-      glowColor: [134 / 255, 120 / 255, 249 / 255], // Indigo-500
+      baseColor: darkMode ? [6 / 255, 6 / 255, 6 / 255] : [233 / 255, 233 / 255, 233 / 255],
+      markerColor: darkMode ? [251 / 255, 200 / 255, 255 / 255] : [1, 1, 1],
+      glowColor: darkMode ? [134 / 255, 120 / 255, 249 / 255] : [134 / 255, 120 / 255, 249 / 255],
       markers: [],
       onRender: (state) => {
-        // This prevents rotation while dragging
         if (!pointerInteracting.current) {
-          // Called on every animation frame.
-          // `state` will be an empty object, return updated params.
           phi += 0.005;
-        } 
+        }
         state.phi = phi + r.get();
         state.width = width * 2;
         state.height = width * 2;
-      }
+      },
     });
 
     setTimeout(() => {
@@ -62,25 +62,26 @@ export function Cobe() {
       }
     });
 
-    return () => { 
+    return () => {
       globe.destroy();
       window.removeEventListener('resize', onResize);
     };
-  }, []);
+  }, [darkMode]);
 
   return (
-    <div style={{
-      width: '100%',
-      maxWidth: 600,
-      aspectRatio: 1,
-      margin: 'auto',
-      position: 'relative',
-    }}>
+    <div
+      style={{
+        width: '100%',
+        maxWidth: 600,
+        aspectRatio: 1,
+        margin: 'auto',
+        position: 'relative',
+      }}
+    >
       <canvas
         ref={canvasRef}
         onPointerDown={(e) => {
-          pointerInteracting.current =
-            e.clientX - pointerInteractionMovement.current;
+          pointerInteracting.current = e.clientX - pointerInteractionMovement.current;
           if (canvasRef.current) {
             canvasRef.current.style.cursor = 'grabbing';
           }
@@ -126,4 +127,4 @@ export function Cobe() {
       />
     </div>
   );
-}
+};

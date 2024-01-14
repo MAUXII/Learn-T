@@ -1,59 +1,41 @@
-import React, { useState, useEffect } from 'react';
-import { MdNightsStay } from 'react-icons/md';
-import { FaSun } from 'react-icons/fa';
-import '../../globals.css';
+import React, { createContext, useContext, useState, useEffect } from 'react';
 
-interface DarkProps {
-  prefersDarkMode: boolean; // Você pode precisar ajustar o tipo com base no seu caso de uso
+interface DarkModeContextProps {
+  darkMode: boolean;
+  toggleDarkMode: () => void;
 }
 
-export const Dark: React.FC<DarkProps> = ({ prefersDarkMode }) => {
-  const [isDarkMode, setIsDarkMode] = useState<boolean | undefined>(undefined);
+interface DarkModeProviderProps {
+  children: React.ReactNode;
+}
 
-  useEffect(() => {
-    const darkModeMediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+const DarkModeContext = createContext<DarkModeContextProps | undefined>(undefined);
 
-    const updateDarkMode = () => {
-      setIsDarkMode(darkModeMediaQuery.matches);
-      console.log('Dark mode updated:', darkModeMediaQuery.matches);
-    };
-
-    // Primeira inicialização
-    updateDarkMode();
-
-    // Adiciona o listener para atualizações
-    darkModeMediaQuery.addEventListener('change', updateDarkMode);
-
-    // Remove o listener no cleanup
-    return () => {
-      darkModeMediaQuery.removeEventListener('change', updateDarkMode);
-    };
-  }, []);
-
-  useEffect(() => {
-    // Verifica se o tema preferido do usuário é dark
-    if (prefersDarkMode !== undefined && prefersDarkMode !== isDarkMode) {
-      setIsDarkMode(prefersDarkMode);
-    }
-  }, [prefersDarkMode]);
-
-  useEffect(() => {
-    // Toggle da classe 'dark' no elemento HTML
-    document.documentElement.classList.toggle('dark', isDarkMode !== undefined && isDarkMode);
-    console.log('Theme set to dark:', isDarkMode);
-  }, [isDarkMode]);
+const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) => {
+  const [darkMode, setDarkMode] = useState(
+    window.matchMedia('(prefers-color-scheme: dark)').matches
+  );
 
   const toggleDarkMode = () => {
-    setIsDarkMode((prevMode) => !prevMode);
+    setDarkMode((prevDarkMode) => !prevDarkMode);
   };
 
-  console.log('Rendering with isDarkMode:', isDarkMode);
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', darkMode);
+  }, [darkMode]);
 
   return (
-    <div className={`transition-all ${isDarkMode ? 'dark' : ''}`}>
-      <button className='' onClick={toggleDarkMode}>
-        {isDarkMode !== undefined ? (isDarkMode ? <MdNightsStay /> : <FaSun />) : 'Loading...'}
-      </button>
-    </div>
+    <DarkModeContext.Provider value={{ darkMode, toggleDarkMode }}>
+      {children}
+    </DarkModeContext.Provider>
   );
 };
+
+export const useDarkMode = () => {
+  const context = useContext(DarkModeContext);
+  if (!context) {
+    throw new Error('useDarkMode must be used within a DarkModeProvider');
+  }
+  return context;
+};
+export default DarkModeProvider;

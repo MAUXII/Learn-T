@@ -16,8 +16,8 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="en">
-      <body className={urbanist.className}>
+    <html lang="pt-br">
+      <body className={`${urbanist.className} background`}>
         {children} 
       </body>
       <PrelineScript />

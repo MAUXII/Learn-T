@@ -10,12 +10,32 @@ import { BtnStart } from './components/Buttons/btnStart'
 import { Features } from './components/Features'
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './components/ui/carousel'
 import { useEffect } from 'react'
-import { Dark } from './components/Dark'
+
 import { Benefits } from './components/Benefits'
 import { Table } from "./components/Table";
 import { CarouselSpacing } from "./components/Carrousel";
+import { Testimonial } from "./components/Carrousel/testimonial";
+import { Header } from "./components/Header";
+import React from 'react';
+import DarkModeProvider from "./components/Dark";
+import { Funil } from "./components/CallFunil";
+import { Price } from "./components/Price";
+import { Footer } from "./components/Footer";
+import FaqSection from "./components/Faq";
 
 export default function Home() {
+
+  
+  useEffect( ()=>{
+    (
+      async () =>{
+        const LocomotiveScroll = (await import('locomotive-scroll')).default
+        const locomotiveScroll = new LocomotiveScroll();
+
+        
+      }
+    )()
+  }, []);
   
   useEffect(() => {
     const setTheme = () => {
@@ -38,15 +58,17 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between  p-8 lg:p-24">
-     
+    <DarkModeProvider>
+    <Header />
+    <main className="flex min-h-screen mt-16 flex-col items-center justify-between  p-8 lg:p-24">
+    
       <div className='w-full max-w-[1256px] flex flex-col'>
         <div className='self-center flex flex-col items-center gap-3 '>
           <div className='relative w-full text-center items-center justify-center flex flex-col gap-2'>
 
         <h1 className='font-bold h-auto z-10 lg:h-[66px] h1-gradient text-6xl text-center'>Aprenda Inglês da Forma Certa</h1>
         <span className='dark:text-gray-400 text-gray-600 z-10 text-center text-sm flex w-full max-w-[750px]'>Aprimore suas habilidades no idioma inglês de maneira eficaz e definitiva, proporcionando uma jornada de aprendizado transformadora. De uma vez por todas, LearnIT! Desperte o seu potencial linguístico com confiança e sucesso.</span>
-        <h2 className='font-bold w-full text-indigo-500/5 mt-[70%] items-center justify-center absolute flex text-[clamp(48px,20vw,22rem)] text-center'>Learn!T</h2>
+        <h2 className='font-bold w-full text-indigo-500/5 mt-[130%] sm:mt-[70%] items-center justify-center absolute flex text-[clamp(48px,20vw,22rem)] text-center'>Learn!T</h2>
 
         </div>
         <div className='flex  z-10 gap-2 mt-2'>
@@ -56,7 +78,7 @@ export default function Home() {
         </div>
         <div className='relative'>
       <Cobe></Cobe>
-      <div className='bottom-0 absolute bg-gray-800/10 w-full translate-y-[70%] lg:h-[620px] backdrop-blur-xl rounded-xl'>
+      <div className='bottom-0 absolute bg-gray-300/10 dark:bg-gray-950/5 w-full translate-y-[70%] lg:h-[620px] backdrop-blur-xl rounded-xl'>
         <Features />
       </div>
       
@@ -92,16 +114,19 @@ export default function Home() {
       <div className='flex w-full mt-24 self-center flex-col items-center gap-3'>
         <div className='w-full text-center items-center justify-center flex flex-col gap-2'>
       <h2 className='font-bold h-auto z-10  max-w-[900px] h1-gradient text-6xl text-center'>O que falam de nós?</h2>
-        <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Quer fazer parte do rank também? não perca tempo e assine nosso plano gratuito</span>
+        <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Quer fazer parte do rank também? não perca tempo e assine nosso plano gratussto</span>
         </div>
-        <div className="px-12 mx-12 flex w-full">
+        <div className="px-12 flex-col gap-8   mx-12 flex w-full">
       <CarouselSpacing />
+      <Testimonial />
       </div>
+      <Funil />
+      <Price />
       </div>
-      
-    
-      
+      <FaqSection />
     </div>
     </main>
+    <Footer />
+    </DarkModeProvider>
   )
 }
