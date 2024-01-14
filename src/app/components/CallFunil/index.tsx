@@ -2,7 +2,7 @@ export const Funil = ()=>{
     return(
   
    
-        <div className="w-full items-center justify-center flex mt-24 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full items-center justify-center flex mt-48 mx-auto px-4 sm:px-6 lg:px-8">
         
           <div className="grid lg:grid-cols-7 lg:gap-x-16 xl:gap-x-16 lg:items-center">
             <div className="lg:col-span-3">

@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="pt-br">
-      <body className={`${urbanist.className} background`}>
+      <body className={`${urbanist.className}  background transition-colors`}>
         {children} 
       </body>
       <PrelineScript />

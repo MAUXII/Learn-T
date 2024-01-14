@@ -1,7 +1,7 @@
 export const Price = () =>{
     return(
 <div className="overflow-hidden w-full  mt-24">
-  <div className="max-w-[100rem] w-full px-4 py-10 sm:px-6 lg:px-6 lg:py-14">
+  <div className="max-w-[100rem] w-full px-4  sm:px-6 lg:px-6 md:py-24">
     <div className="mx-auto max-w-2xl mb-8 lg:mb-14 text-center">
       <h2 className="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200">
         Pronto para alavancar sua carreira?

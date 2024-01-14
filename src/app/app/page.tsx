@@ -1,10 +1,12 @@
 'use client'
 
-
-export default function App() {
+function App() {
+    
     return(
-        <div className="w-full justify-center items-center px-32 py-16">
        
-        </div>
-    )
-}
+   <div></div>
+    );
+};
+
+export default App;
+

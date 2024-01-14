@@ -2,7 +2,7 @@ import React from 'react';
 
 const FaqSection: React.FC = () => {
   return (
-    <div className="max-w-[85rem] mt-24 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
+    <div className="max-w-[85rem] mt-48 px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
       {/* Title */}
       <div className="max-w-2xl mx-auto text-center mb-10 lg:mb-14">
         <h2 className="text-2xl font-bold md:text-3xl md:leading-tight text-gray-800 dark:text-gray-200">

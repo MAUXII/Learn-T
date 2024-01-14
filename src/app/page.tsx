@@ -58,9 +58,11 @@ export default function Home() {
   }, []);
 
   return (
+    
     <DarkModeProvider>
+      <div>
     <Header />
-    <main className="flex min-h-screen mt-16 flex-col items-center justify-between  p-8 lg:p-24">
+    <main className="flex min-h-screen mt-16 flex-col items-center justify-between transition-colors p-8 lg:p-24">
     
       <div className='w-full max-w-[1256px] flex flex-col'>
         <div className='self-center flex flex-col items-center gap-3 '>
@@ -85,7 +87,7 @@ export default function Home() {
       
       </div>
       <div className='lg:h-[40rem] md:h-[30rem] sm:h-[20rem] h-[19.6rem] w-full '></div>
-      <div className='flex w-full mt-24 self-center justify-center flex-col items-center gap-3'>
+      <div className='flex w-full mt-48 self-center justify-center flex-col items-center gap-3'>
         <div className='w-full text-center items-center justify-center flex flex-col gap-2'>
       <h2 className='font-bold h-auto z-10 lg:h-[126px] max-w-[900px] h1-gradient text-6xl text-center'>A importância de aprender inglês fugindo do convencional</h2>
         <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Aprimore suas habilidades no idioma inglês de maneira eficaz e definitiva, proporcionando uma jornada de aprendizado transformadora. De uma vez por todas, LearnIT! Desperte o seu potencial linguístico com confiança e sucesso.</span>
@@ -102,7 +104,7 @@ export default function Home() {
 </div>
       </div>
 
-      <div className='flex w-full mt-24 self-center flex-col items-center gap-3'>
+      <div className='flex w-full mt-48 self-center flex-col items-center gap-3'>
         <div className='w-full text-center items-center justify-center flex flex-col gap-2'>
       <h2 className='font-bold h-auto z-10 lg:h-[126px] max-w-[900px] h1-gradient text-6xl text-center'>Veja o Rank dos alunos mais dedicados da LearnIT</h2>
         <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Quer fazer parte do rank também? não perca tempo e assine nosso plano gratuito</span>
@@ -111,7 +113,7 @@ export default function Home() {
         <Table></Table>
       </div>
 
-      <div className='flex w-full mt-24 self-center flex-col items-center gap-3'>
+      <div className='flex w-full mt-48 self-center flex-col items-center gap-3'>
         <div className='w-full text-center items-center justify-center flex flex-col gap-2'>
       <h2 className='font-bold h-auto z-10  max-w-[900px] h1-gradient text-6xl text-center'>O que falam de nós?</h2>
         <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Quer fazer parte do rank também? não perca tempo e assine nosso plano gratussto</span>
@@ -120,13 +122,15 @@ export default function Home() {
       <CarouselSpacing />
       <Testimonial />
       </div>
-      <Funil />
       <Price />
+      <Funil />
       </div>
       <FaqSection />
     </div>
     </main>
     <Footer />
+    </div>
     </DarkModeProvider>
+    
   )
 }

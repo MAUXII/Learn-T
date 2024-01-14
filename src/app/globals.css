@@ -95,16 +95,6 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-    to bottom,
-    rgb(var(--background-start-rgb)),
-    rgb(var(--background-end-rgb))
-  );
-
-}
-
 .background{
   color: rgb(0, 0, 0);
   background: linear-gradient(

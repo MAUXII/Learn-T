@@ -12,13 +12,26 @@ interface DarkModeProviderProps {
 const DarkModeContext = createContext<DarkModeContextProps | undefined>(undefined);
 
 const DarkModeProvider: React.FC<DarkModeProviderProps> = ({ children }) => {
-  const [darkMode, setDarkMode] = useState(
-    window.matchMedia('(prefers-color-scheme: dark)').matches
-  );
+  const [darkMode, setDarkMode] = useState(false);
 
   const toggleDarkMode = () => {
     setDarkMode((prevDarkMode) => !prevDarkMode);
   };
+
+  useEffect(() => {
+    const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
+    setDarkMode(prefersDarkScheme.matches);
+
+    const updateDarkMode = () => {
+      setDarkMode(prefersDarkScheme.matches);
+    };
+
+    prefersDarkScheme.addEventListener('change', updateDarkMode);
+
+    return () => {
+      prefersDarkScheme.removeEventListener('change', updateDarkMode);
+    };
+  }, []);
 
   useEffect(() => {
     document.documentElement.classList.toggle('dark', darkMode);
