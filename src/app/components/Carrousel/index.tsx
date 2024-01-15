@@ -3,7 +3,7 @@ import * as React from "react"
 
 export function CarouselSpacing() {
   return (
-    <div className="w-full flex mt-8 flex-col h-[50rem] md:h-[35rem] lg:h-[25rem] rounded-3xl shadow-xl shadow-gray-200/20 relative z-10 bg-white/10  dark:bg-preto/10 dark:shadow-indigo-950/5 ">
+    <div className="w-full flex mt-48 flex-col h-[50rem] md:h-[35rem] lg:h-[25rem] rounded-3xl shadow-xl shadow-gray-200/20 relative z-10 bg-white/10  dark:bg-preto/10 dark:shadow-indigo-950/5 ">
       <div className="w-full h-[60%] rounded-t-3xl bg-cover bg-center bg-no-repeat" style={{backgroundImage: "url('/p4.jpg')"}}> </div>
       <div className="flex flex-col  py-4 px-6 md:px-12">
               <div className="flex flex-col">
