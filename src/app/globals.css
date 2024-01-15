@@ -81,6 +81,39 @@
   }
 }
 
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Cor de fundo da barra de rolagem */
+::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+/* Cor do "ponteiro" da barra de rolagem */
+::-webkit-scrollbar-thumb {
+  background-color: #452db4;
+}
+
+/* Mudando a cor quando estiver hover (opcional) */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #3e27a0;
+}
+
+.dark ::-webkit-scrollbar-track {
+  background-color: #1b1b1b;
+}
+
+/* Cor do "ponteiro" da barra de rolagem */
+.dark ::-webkit-scrollbar-thumb {
+  background-color: #452db4;
+}
+
+/* Mudando a cor quando estiver hover (opcional) */
+.dark ::-webkit-scrollbar-thumb:hover {
+  background-color: #3e27a0;
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
