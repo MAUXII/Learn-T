@@ -8,7 +8,6 @@ import { Cobe } from './components/Globe'
 import { ButtonSpotlightBorder } from './components/Buttons/btnBorder'
 import { BtnStart } from './components/Buttons/btnStart'
 import { Features } from './components/Features'
-import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from './components/ui/carousel'
 import { useEffect } from 'react'
 
 import { Benefits } from './components/Benefits'

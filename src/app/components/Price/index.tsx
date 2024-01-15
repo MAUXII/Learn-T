@@ -1,6 +1,6 @@
 export const Price = () =>{
     return(
-<div className="overflow-hidden w-full  mt-24">
+<div className="overflow-hidden w-full  mt-48">
   <div className="max-w-[100rem] w-full px-4  sm:px-6 lg:px-6 md:py-24">
     <div className="mx-auto max-w-2xl mb-8 lg:mb-14 text-center">
       <h2 className="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200">
@@ -13,7 +13,7 @@ export const Price = () =>{
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-8">
         <div>
           
-          <div className="p-4 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-preto dark:border-gray-700">
+          <div className="shadow-xl shadow-gray-200 p-5 relative z-10 backdrop-blur-sm bg-white/10 border rounded-xl md:p-10 dark:bg-preto/10 dark:border-gray-700 dark:shadow-gray-900/[.2]">
             <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">StudentIT</h3>
             <div className="text-sm text-gray-500">Para estudo acadêmico e evolução interpessoal</div>
 
@@ -91,7 +91,7 @@ export const Price = () =>{
               </div>
 
               <div className="flex justify-end">
-                <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-preto dark:border-gray-700 dark:text-white dark:hover:bg-gray-950/40 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Start free trial</button>
+                <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-preto dark:border-gray-700 dark:text-white dark:hover:bg-gray-950/40 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Teste Grátis</button>
               </div>
             </div>
           </div>
@@ -101,10 +101,10 @@ export const Price = () =>{
 
         <div>
       
-          <div className="shadow-xl shadow-gray-200 p-5 relative z-10 bg-white border rounded-xl md:p-10 dark:bg-preto dark:border-gray-700 dark:shadow-gray-900/[.2]">
+          <div className="shadow-xl shadow-gray-200 p-5 backdrop-blur-sm relative z-10 bg-white/10 border rounded-xl md:p-10 dark:bg-preto/10 dark:border-gray-700 dark:shadow-gray-900/[.2]">
             <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">ProfessionalIT</h3>
             <div className="text-sm text-gray-500">Para estudo de nível superior e crescimento profissional</div>
-            <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-white dark:text-gray-800">Most popular</span>
+            <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-white dark:text-gray-800">Mais Popular</span>
 
             <div className="mt-5">
               <span className="text-6xl font-bold text-gray-800 dark:text-gray-200">R$36</span>
@@ -181,7 +181,7 @@ export const Price = () =>{
               </div>
 
               <div className="flex justify-end">
-                <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-indigo-600 text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Start free trial</button>
+                <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-indigo-600 text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Começar Agora</button>
               </div>
             </div>
           </div>
