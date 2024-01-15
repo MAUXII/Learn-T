@@ -1,6 +1,6 @@
 export const Table = () =>{
     return(
-        <div className="flex flex-col w-full mt-48">
+        <div className="flex mt-8 flex-col w-full">
   <div className="-m-1.5 overflow-x-auto">
     <div className="p-1.5 w-full inline-block align-middle">
       <div className="overflow-hidden">
