@@ -28,7 +28,7 @@ export function CarouselSpacing() {
                        
                         </div>
                       <span className="dark:text-gray-400 font-semibold text-sm text-gray-600" >Back-end Developer</span>
-                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">"Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional"</p>
+                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">&ldquo;Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional&rdquo;</p>
                     </div>
                   </div>
                 </CardContent>
@@ -50,7 +50,7 @@ export function CarouselSpacing() {
                        
                         </div>
                       <span className="dark:text-gray-400 font-semibold text-sm text-gray-600" >Front-end Developer</span>
-                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">"Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional"</p>
+                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">&ldquo;Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional&rdquo;</p>
                     </div>
                   </div>
                 </CardContent>
@@ -72,7 +72,7 @@ export function CarouselSpacing() {
                        
                         </div>
                       <span className="dark:text-gray-400 font-semibold text-sm text-gray-600" >Senior Full-stack Developer</span>
-                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">"Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional"</p>
+                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">&ldquo;Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional&rdquo;</p>
                     </div>
                   </div>
                 </CardContent>
@@ -95,7 +95,7 @@ export function CarouselSpacing() {
                        
                         </div>
                       <span className="dark:text-gray-400 font-semibold text-sm text-gray-600" >Criador de Conteúdo</span>
-                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">"Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional"</p>
+                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">&ldquo;Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional&rdquo;</p>
                     </div>
                   </div>
                 </CardContent>
@@ -117,7 +117,7 @@ export function CarouselSpacing() {
                        
                         </div>
                       <span className="dark:text-gray-400 font-semibold text-sm text-gray-600"> Market Leader</span>
-                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">"Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional"</p>
+                      <p className="dark:text-gray-400 text-white-600 font-normal text-xs mt-2">&ldquo;Foi uma das melhores decisões que tomei, depois que terminei o curso da LearnIT, conquistei meu certificado C1 e fui contratada por uma empresa multi-nacional&rdquo;</p>
                     </div>
                   </div>
                 </CardContent>
