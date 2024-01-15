@@ -61,7 +61,7 @@ export default function Home() {
     <DarkModeProvider>
       <div>
     <Header />
-    <main className="flex min-h-screen mt-16 flex-col items-center justify-between transition-colors p-8 lg:p-24">
+    <main className="flex min-h-screen mt-16 flex-col items-center justify-between transition-colors p-4 sm:p-8 md:p-12 lg:p-24">
     
       <div className='w-full max-w-[1256px] flex flex-col'>
         <div className='self-center flex flex-col items-center gap-3 '>
@@ -88,8 +88,8 @@ export default function Home() {
       <div className='lg:h-[40rem] md:h-[30rem] sm:h-[20rem] h-[19.6rem] w-full '></div>
       <div className='flex w-full mt-48 self-center justify-center flex-col items-center gap-3'>
         <div className='w-full text-center items-center justify-center flex flex-col gap-2'>
-      <h2 className='font-bold h-auto z-10 lg:h-[126px] max-w-[900px] h1-gradient text-6xl text-center'>A importância de aprender inglês fugindo do convencional</h2>
-        <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Aprimore suas habilidades no idioma inglês de maneira eficaz e definitiva, proporcionando uma jornada de aprendizado transformadora. De uma vez por todas, LearnIT! Desperte o seu potencial linguístico com confiança e sucesso.</span>
+      <h2 className='font-bold h-auto z-10 min-h-[66px] max-w-[900px] h1-gradient text-6xl text-center'>O tal do Inglês falado no mundo</h2>
+        <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Desbravando o Inglês Falado no Mundo - Conectando Você ao Idioma Global</span>
         </div>
       
         <div className="grid grid-rows-2 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-3 w-full mt-8 gap-y-6 sm:gap-y-8 md:gap-y-[100px] lg:gap-y-4">
@@ -115,9 +115,9 @@ export default function Home() {
       <div className='flex w-full mt-48 self-center flex-col items-center gap-3'>
         <div className='w-full text-center items-center justify-center flex flex-col gap-2'>
       <h2 className='font-bold h-auto z-10  max-w-[900px] h1-gradient text-6xl text-center'>O que falam de nós?</h2>
-        <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Quer fazer parte do rank também? não perca tempo e assine nosso plano gratussto</span>
+        <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Descubra o que Dizem sobre Nós - Transformando Comentários em Experiências de Aprendizado</span>
         </div>
-        <div className="px-12 flex-col gap-8   mx-12 flex w-full">
+        <div className="lg:px-12 flex-col gap-8   lg:mx-12 flex w-full">
       <CarouselSpacing />
       <Testimonial />
       </div>

@@ -2,12 +2,12 @@ export const Funil = ()=>{
     return(
   
    
-        <div className="w-full items-center justify-center flex mt-48 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="w-full items-center justify-center flex mt-48 mx-auto  lg:px-8">
         
           <div className="grid lg:grid-cols-7 lg:gap-x-16 xl:gap-x-16 lg:items-center">
             <div className="lg:col-span-3">
               <h1 className="block text-3xl font-bold text-gray-800 sm:text-4xl md:text-5xl lg:justify-normal justify-center lg:items-start items-center lg:text-start text-center lg:text-6xl dark:text-white">Pense Menos, Talk More</h1>
-              <p className="mt-3 text-lg text-gray-800 dark:text-gray-400">Introduzimos nosso novo e-book para comunidade, Pense Menos, Talk More, baixe já!</p>
+              <p className="mt-3 lg:justify-normal justify-center lg:items-start items-center lg:text-start text-center  text-lg text-gray-800 dark:text-gray-400">Introduzimos nosso novo e-book para comunidade, Pense Menos, Talk More, baixe já!</p>
         
               <div className="mt-5 lg:mt-8 flex flex-col lg:justify-normal justify-center items-center gap-2 sm:flex-row sm:gap-3">
                 <div className="w-full sm:w-auto">

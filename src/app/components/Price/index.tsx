@@ -1,7 +1,7 @@
 export const Price = () =>{
     return(
 <div className="overflow-hidden w-full  mt-24">
-  <div className="max-w-[100rem] w-full px-4  sm:px-6 lg:px-6 md:py-24">
+  <div className="max-w-[100rem] w-full  lg:px-6 md:py-24">
     <div className="mx-auto max-w-2xl mb-8 lg:mb-14 text-center">
       <h2 className="text-3xl lg:text-4xl text-gray-800 font-bold dark:text-gray-200">
         Pronto para alavancar sua carreira?
@@ -181,7 +181,7 @@ export const Price = () =>{
               </div>
 
               <div className="flex justify-end">
-                <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-indigo-600 text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Começar Agora</button>
+                <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent bg-indigo-600 text-white hover:bg-indigo-700 disabled:opacity-50 disabled:pointer-events-none dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Começar</button>
               </div>
             </div>
           </div>
