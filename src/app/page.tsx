@@ -22,6 +22,7 @@ import { Price } from "./components/Price";
 import { Footer } from "./components/Footer";
 import FaqSection from "./components/Faq";
 import { Lastcall } from "./components/Lastcall";
+import { FirstCall } from "./components/FirstCall";
 
 export default function Home() {
 
@@ -106,11 +107,13 @@ export default function Home() {
 
       <div className='flex w-full mt-48 self-center flex-col items-center gap-3'>
         <div className='w-full text-center items-center justify-center flex flex-col gap-2'>
-      <h2 className='font-bold h-auto z-10 lg:h-[126px] max-w-[900px] h1-gradient text-6xl text-center'>Veja o Rank dos alunos mais dedicados da LearnIT</h2>
-        <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Quer fazer parte do rank também? não perca tempo e assine nosso plano gratuito</span>
+      <h2 className='font-bold h-auto z-10 max-w-[1000px] h1-gradient text-6xl text-center'>Os mais dedicados são da LearnIT</h2>
+       
         </div>
-      
+        <FirstCall />
+        <div className="w-full h-[clamp(5rem,10rem,5rem)]"></div>
         <Table></Table>
+        <p className='dark:text-gray-400 mt-4 text-gray-600 z-10 text-center justify-center items-center text-sm  w-full max-w-[750px]'>Quer fazer parte do rank também? não perca tempo e{' '} <a className="underline cursor-pointer mx-[4px] text-indigo-500 hover:text-indigo-600">assine </a> {' '} nosso plano gratuito</p>
       </div>
 
       <div className='flex w-full mt-48 self-center flex-col items-center gap-3'>

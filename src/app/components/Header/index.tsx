@@ -19,9 +19,9 @@ export const Header = ()=>{
       </div>
     </div>
     <div id="navbar-collapse-with-animation" className="hs-collapse hidden overflow-hidden transition-all duration-300 basis-full grow sm:block">
-      <div className="flex flex-col justify-center gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-4 sm:mt-0 sm:ps-4">
-        <a className="font-medium flex justify-center w-full sm:flex sm:w-max text-indigo-600 sm:py-6 dark:text-indigo-500" href="#" aria-current="page">Home</a>
-        <a className="font-medium flex justify-center w-full sm:w-max text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="#">Account</a>
+      <div className="flex flex-col  justify-center gap-y-4 gap-x-0 mt-5 sm:flex-row sm:items-center sm:justify-end sm:gap-y-0 sm:gap-x-4 sm:mt-0 sm:ps-4">
+        <a className="font-medium flex  justify-center w-full sm:flex sm:w-max text-indigo-600 sm:py-6 dark:text-indigo-500" href="#" aria-current="page">Home</a>
+        <a className="font-medium flex  justify-center w-full sm:w-max text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="#">Account</a>
         <a className="font-medium flex justify-center w-full sm:w-max text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="#">Work</a>
         <a className="font-medium flex justify-center w-full sm:w-max  text-gray-500 hover:text-gray-400 sm:py-6 dark:text-gray-400 dark:hover:text-gray-500" href="#">Blog</a>
 
