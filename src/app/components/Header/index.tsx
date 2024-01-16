@@ -4,7 +4,8 @@ import DarkModeToggle from "../Dark/btndark"
 export const Header = ()=>{
     return(
         <header className="flex fixed top-0 flex-wrap sm:justify-start sm:flex-nowrap z-50 w-full bg-white/20 backdrop-blur-[48px] border-b border-gray-200 text-sm py-3 sm:py-0 dark:bg-black/20 dark:border-gray-700">
-  <nav className="relative max-w-[1288px] w-full mx-auto px-4 sm:flex sm:items-center sm:justify-between sm:px-6 lg:px-8" aria-label="Global">
+          <div className="w-full px-4 sm:px-8 md:px-12 lg:px-24 justify-center self-center items-center">
+  <nav className="relative max-w-[1256px] w-full mx-auto sm:flex sm:items-center sm:justify-between " aria-label="Global">
     <div className="flex items-center w-full justify-between">
       <a className="flex-none text-xl font-semibold dark:text-white" href="#" aria-label="Brand">Learn!T</a>
       <div className="sm:hidden">
@@ -30,6 +31,7 @@ export const Header = ()=>{
       </div>
     </div>
   </nav>
+  </div>
 </header>
     )
 }

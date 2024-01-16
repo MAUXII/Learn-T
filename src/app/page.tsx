@@ -113,7 +113,7 @@ export default function Home() {
         <FirstCall />
         <div className="w-full h-[clamp(5rem,10rem,5rem)]"></div>
         <Table></Table>
-        <p className='dark:text-gray-400 mt-4 text-gray-600 z-10 text-center justify-center items-center text-sm  w-full max-w-[750px]'>Quer fazer parte do rank também? não perca tempo e{' '} <a className="underline cursor-pointer mx-[4px] text-indigo-500 hover:text-indigo-600">assine </a> {' '} nosso plano gratuito</p>
+        <p className='dark:text-gray-400 mt-4 text-gray-600 z-10 text-center justify-center items-center text-sm  w-full max-w-[750px]'>Quer fazer parte do rank também? não perca tempo e<a className="underline cursor-pointer mx-[4px] text-indigo-500 hover:text-indigo-400">assine</a>nosso plano gratuito</p>
       </div>
 
       <div className='flex w-full mt-48 self-center flex-col items-center gap-3'>
