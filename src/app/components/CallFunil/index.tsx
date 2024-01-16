@@ -65,7 +65,8 @@ export const Funil = ()=>{
            
         
             <div className="lg:col-span-4 flex lg:justify-end justify-center mt-10 lg:mt-0">
-              <img className="w-full justify-center self-center flex items-center max-w-[36rem] rounded-xl h-auto" src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80" alt="woman having fun with notebook" />
+              <div className="w-full justify-center bg-center bg-cover self-center flex items-center lg:w-[36rem] bg-gray-500 rounded-xl h-[31.25rem] md:h-[41.25rem]" style={{backgroundImage: 'url("https://images.unsplash.com/photo-1582298538104-fe2e74c27f59?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'}}></div>
+              {/*<img className="w-full justify-center self-center flex items-center lg:max-w-[36rem] rounded-xl h-auto" src="https://images.unsplash.com/photo-1665686377065-08ba896d16fd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=700&h=800&q=80" alt="woman having fun with notebook" />*/}
             </div>
             
           </div>
