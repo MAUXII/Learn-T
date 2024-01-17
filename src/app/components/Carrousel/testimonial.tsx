@@ -1,7 +1,7 @@
 export const Testimonial = ( ) =>{
     return(
 
-<div className="max-w-[85rem]  pt-10  lg:px-8 lg:py-0 mx-auto">
+<div className="w-full pt-10  lg:px-6 lg:py-0 mx-auto">
 
   <div className="lg:grid lg:grid-cols-12 lg:gap-16 lg:items-center lg:justify-between">
     <div className="lg:col-span-5 lg:col-start-1">

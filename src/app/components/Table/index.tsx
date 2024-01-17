@@ -35,7 +35,7 @@ export const Table = () =>{
             <tr>
               <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Joe Black</td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">52</td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Dezembro de 2019</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Outubro de 2019</td>
               <td className="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
                 <button type="button" className="inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-indigo-600 hover:text-indigo-800 disabled:opacity-50 disabled:pointer-events-none dark:text-indigo-500 dark:hover:text-indigo-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Instagram</button>
               </td>
@@ -44,7 +44,7 @@ export const Table = () =>{
             <tr>
               <td className="px-6 py-4 whitespace-nowrap text-sm font-medium text-gray-800 dark:text-gray-200">Jeff Blank</td>
               <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">19</td>
-              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Fevereiro de 2022</td>
+              <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-800 dark:text-gray-200">Julho de 2022</td>
               <td className="px-6 py-4 whitespace-nowrap text-end text-sm font-medium">
                 <button type="button" className="inline-flex items-center gap-x-2 text-sm font-semibold rounded-lg border border-transparent text-indigo-600 hover:text-indigo-800 disabled:opacity-50 disabled:pointer-events-none dark:text-indigo-500 dark:hover:text-indigo-400 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Instagram</button>
               </td>

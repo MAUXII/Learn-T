@@ -2,9 +2,9 @@ import React from 'react';
 
 const FaqSection: React.FC = () => {
   return (
-    <div className="w-full mx-auto">
+    <div className="w-full mx-auto mt-48">
 
-      <div className="max-w-2xl mx-auto text-center mt-48">
+      <div className="w-full mx-auto text-center">
         <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Suas perguntas, respondidas</h2>
         <p className="mt-1 text-gray-600 dark:text-gray-400">Encontre respostas para as dúvidas mais comuns sobre o LearnIT.</p>
       </div>
