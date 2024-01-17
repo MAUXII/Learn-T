@@ -7,7 +7,7 @@ export const Lastcall = ()=>{
                 <span className="text-sm font-medium text-white">Venha para o LearnIT</span>
                 <span className="text-4xl text-white self-center text-center sm:text-start font-bold w-[310px] sm:w-[405px]">Matricule-se já <br /> ganhe desconto no curso <br className="hidden sm:block" /> e material didático</span>
                 <div className="flex flex-row sm:self-start self-center gap-2">
-                <a className="w-max bg-indigo-600 cursor-pointer hover:bg-indigo-600/90 text-white ring ring-white/20  rounded-lg py-4 px-6 mt-6 whitespace-nowrap">Matricule-se já</a>
+                <a className="w-max bg-indigo-600 cursor-pointer hover:bg-indigo-700 text-white ring ring-white/20  rounded-lg py-4 px-6 mt-6 whitespace-nowrap">Matricule-se já</a>
                 </div>
                 </div>
                 <div className="sm:hidden w-full h-1/2"></div>

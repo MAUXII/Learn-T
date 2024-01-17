@@ -44,7 +44,7 @@ export const ButtonSpotlightBorder = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
        
-        className='h-12 items-center text-sm flex w-auto cursor-pointer bg-transparent rounded-md border dark:border-slate-800 p-3.5 dark:text-slate-100 border-slate-300 text-slate-900 transition-colors duration-500 placeholder:select-none  placeholder:text-neutral-500 focus:border-[#8678F9] focus:outline-none'
+        className='h-12 items-center text-sm flex w-auto cursor-pointer bg-transparent rounded-md border dark:border-slate-800/50 p-3.5 dark:text-slate-100 border-slate-300 text-slate-900 transition-colors duration-500 placeholder:select-none  placeholder:text-neutral-500 focus:border-[#8678F9] focus:outline-none'
         type='button' // Altere de email para button
       >
         Começar 🚀

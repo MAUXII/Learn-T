@@ -86,7 +86,7 @@ export const Price = () =>{
               </div>
 
               <div className="flex justify-end">
-                <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white text-gray-800 shadow-sm hover:bg-gray-50 disabled:opacity-50 disabled:pointer-events-none dark:bg-preto dark:border-gray-700 dark:text-white dark:hover:bg-gray-950/40 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Teste Grátis</button>
+                <button type="button" className="py-3 px-4 inline-flex items-center gap-x-2 text-sm font-medium rounded-lg border border-gray-200 bg-white/10 text-gray-800 shadow-sm hover:bg-white/100 disabled:opacity-50 disabled:pointer-events-none dark:bg-preto dark:border-gray-700 dark:text-white dark:hover:bg-stone-950/40 dark:focus:outline-none dark:focus:ring-1 dark:focus:ring-gray-600">Teste Grátis</button>
               </div>
             </div>
           </div>
@@ -97,8 +97,8 @@ export const Price = () =>{
         <div>
       
           <div className="shadow-xl shadow-gray-200 p-5 backdrop-blur-sm relative z-10 bg-white/10 border rounded-xl md:p-10 dark:bg-preto/10 dark:border-gray-700 dark:shadow-gray-900/[.2]">
-            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">ProfessionalIT</h3>
-            <div className="text-sm text-gray-500">Para estudo de nível superior e crescimento profissional</div>
+            <h3 className="text-xl font-bold text-gray-800 dark:text-gray-200">ExpertIT</h3>
+            <div className="text-sm text-gray-500">Para crescimento profissional</div>
             <span className="absolute top-0 end-0 rounded-se-xl rounded-es-xl text-xs font-medium bg-gray-800 text-white py-1.5 px-3 dark:bg-white dark:text-gray-800">Mais Popular</span>
 
             <div className="mt-5">

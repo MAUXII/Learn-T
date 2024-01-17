@@ -92,12 +92,12 @@
 
 /* Cor do "ponteiro" da barra de rolagem */
 ::-webkit-scrollbar-thumb {
-  background-color: #452db4;
+  background-color: #6b52db;
 }
 
 /* Mudando a cor quando estiver hover (opcional) */
 ::-webkit-scrollbar-thumb:hover {
-  background-color: #3e27a0;
+  background-color: #5a3ed4;
 }
 
 .dark ::-webkit-scrollbar-track {
@@ -106,12 +106,12 @@
 
 /* Cor do "ponteiro" da barra de rolagem */
 .dark ::-webkit-scrollbar-thumb {
-  background-color: #452db4;
+  background-color: #6b52db;
 }
 
 /* Mudando a cor quando estiver hover (opcional) */
 .dark ::-webkit-scrollbar-thumb:hover {
-  background-color: #3e27a0;
+  background-color: #5a3ed4;
 }
 
 :root {
