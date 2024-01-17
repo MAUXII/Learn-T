@@ -81,7 +81,7 @@ export default function Home() {
         </div>
         <div className='relative'>
       <Cobe></Cobe>
-      <div className='bottom-0 absolute bg-gray-300/10 dark:bg-gray-950/5 w-full translate-y-[70%] lg:h-[620px] backdrop-blur-xl rounded-xl'>
+      <div className='bottom-0 absolute bg-gray-300/10 dark:bg-black/10 w-full translate-y-[70%] lg:h-[620px] backdrop-blur-xl rounded-xl'>
         <Features />
       </div>
       
