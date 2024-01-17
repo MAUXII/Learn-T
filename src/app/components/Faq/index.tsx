@@ -4,9 +4,9 @@ const FaqSection: React.FC = () => {
   return (
     <div className="w-full mx-auto">
 
-      <div className="max-w-2xl mx-auto text-center mt-24">
+      <div className="max-w-2xl mx-auto text-center mt-48">
         <h2 className="text-2xl font-bold md:text-4xl md:leading-tight dark:text-white">Suas perguntas, respondidas</h2>
-        <p className="mt-1 text-gray-600 dark:text-gray-400">Respostas para as perguntas mais frequentes.</p>
+        <p className="mt-1 text-gray-600 dark:text-gray-400">Encontre respostas para as dúvidas mais comuns sobre o LearnIT.</p>
       </div>
 
     
