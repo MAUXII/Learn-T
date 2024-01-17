@@ -7,7 +7,7 @@ export const Features = ( )=>{
       <svg className="flex-shrink-0 hidden sm:block h-7 w-7 hs-tab-active:text-indigo-600 text-gray-800 dark:hs-tab-active:text-indigo-500 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 5.5A3.5 3.5 0 0 1 8.5 2H12v7H8.5A3.5 3.5 0 0 1 5 5.5z"/><path d="M12 2h3.5a3.5 3.5 0 1 1 0 7H12V2z"/><path d="M12 12.5a3.5 3.5 0 1 1 7 0 3.5 3.5 0 1 1-7 0z"/><path d="M5 19.5A3.5 3.5 0 0 1 8.5 16H12v3.5a3.5 3.5 0 1 1-7 0z"/><path d="M5 12.5A3.5 3.5 0 0 1 8.5 9H12v7H8.5A3.5 3.5 0 0 1 5 12.5z"/></svg>
       <span className="sm:mt-5">
         <span className="hs-tab-active:text-indigo-600 block text-center font-semibold text-gray-800 dark:hs-tab-active:text-indigo-500 dark:text-gray-200">Tudo em um lugar só</span>
-        <span className="hidden lg:block mt-2 text-center text-gray-800 dark:text-gray-200">Aprenda o inglês falado tudo em uma plataforma só, sem complicações</span>
+        <span className="hidden lg:block mt-2 text-center text-gray-800 dark:text-gray-400">Aprenda o inglês falado tudo em uma plataforma só, sem complicações</span>
       </span>
     </button>
 
@@ -15,7 +15,7 @@ export const Features = ( )=>{
       <svg className="flex-shrink-0 hidden sm:block h-7 w-7 hs-tab-active:text-indigo-600 text-gray-800 dark:hs-tab-active:text-indigo-500 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 14 4-4"/><path d="M3.34 19a10 10 0 1 1 17.32 0"/></svg>
       <span className="sm:mt-5">
         <span className="hs-tab-active:text-indigo-600 block text-center font-semibold text-gray-800 dark:hs-tab-active:text-indigo-500 dark:text-gray-200">Aumente o seu level</span>
-        <span className="hidden lg:block text-center mt-2 text-gray-800 dark:text-gray-200">Um sistema de Rank saudável, incentivamos os alunos a estudarem cada vez mais!</span>
+        <span className="hidden lg:block text-center mt-2 text-gray-800 dark:text-gray-400">Um sistema de Rank saudável, incentivamos os alunos a estudarem cada vez mais!</span>
       </span>
     </button>
 
@@ -23,7 +23,7 @@ export const Features = ( )=>{
       <svg className="flex-shrink-0 hidden sm:block h-7 w-7 hs-tab-active:text-indigo-600 text-gray-800 dark:hs-tab-active:text-indigo-500 dark:text-white" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"/><path d="M5 3v4"/><path d="M19 17v4"/><path d="M3 5h4"/><path d="M17 19h4"/></svg>
       <span className="sm:mt-5">
         <span className="hs-tab-active:text-indigo-600 block text-center font-semibold text-gray-800 dark:hs-tab-active:text-indigo-500 dark:text-gray-200">Respondendo suas dúvidas</span>
-        <span className="hidden text-center lg:block mt-2 text-gray-800 dark:text-gray-200">Agora temons uma nova feature, um IA Chatbot que irá tirar todas suas dúvidas</span>
+        <span className="hidden text-center lg:block mt-2 text-gray-800 dark:text-gray-400">Agora temons uma nova feature, um IA Chatbot que irá tirar todas suas dúvidas</span>
       </span>
     </button>
   </nav>
