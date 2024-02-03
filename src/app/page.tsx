@@ -65,11 +65,11 @@ export default function Home() {
     <Header />
     <main className="flex min-h-screen mt-16 flex-col items-center justify-between transition-colors p-4 sm:p-8 md:p-12 lg:p-24">
     
-      <div className='w-full max-w-[1256px] flex flex-col'>
+      <div className='w-full max-w-[1256px] mt-8 sm:mt-0 flex flex-col'>
         <div className='self-center flex flex-col items-center gap-3 '>
           <div className='relative w-full text-center items-center justify-center flex flex-col gap-2'>
 
-        <h1 className='font-bold h-auto z-10 lg:h-[66px] h1-gradient text-6xl text-center'>Aprenda Inglês da Forma Certa</h1>
+        <h1 className='font-bold h-auto z-10 leading-normal h1-gradient text-6xl text-center'>Aprenda o Inglês LearnIT</h1>
         <span className='dark:text-gray-400 text-gray-600 z-10 text-center text-sm flex w-full max-w-[750px]'>Aprimore suas habilidades no idioma inglês de maneira eficaz e definitiva, proporcionando uma jornada de aprendizado transformadora. De uma vez por todas, LearnIT! Desperte o seu potencial linguístico com confiança e sucesso.</span>
         <h2 className='font-bold w-full text-indigo-500/5 mt-[130%] sm:mt-[70%] items-center justify-center absolute flex text-[clamp(48px,20vw,22rem)] text-center'>Learn!T</h2>
 
@@ -90,7 +90,7 @@ export default function Home() {
       <div className='lg:h-[40rem] md:h-[30rem] sm:h-[20rem] h-[19.6rem] w-full '></div>
       <div className='flex w-full mt-48 self-center justify-center flex-col items-center gap-3'>
         <div className='w-full text-center items-center justify-center flex flex-col gap-2'>
-      <h2 className='font-bold h-auto z-10 min-h-[66px] max-w-[900px] h1-gradient text-6xl text-center'>O tal do Inglês falado no mundo</h2>
+      <h2 className='font-bold h-auto z-10 min-h-[66px] max-w-[900px] h1-gradient text-6xl text-center'>O Inglês falado no mundo</h2>
         <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Desbravando o Inglês Falado no Mundo - Conectando Você ao Idioma Global</span>
         </div>
       
