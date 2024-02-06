@@ -118,7 +118,7 @@ export default function Home() {
 
       <div className='flex w-full mt-48 self-center flex-col items-center gap-3'>
         <div className='w-full mb-[-48px] text-center items-center justify-center flex flex-col gap-2'>
-      <h2 className='font-bold h-auto z-10  max-w-[900px] h1-gradient text-6xl text-center'>Pronto decolar sua carreira?</h2>
+      <h2 className='font-bold h-auto z-10  max-w-[900px] h1-gradient text-6xl text-center'>Pronto para decolar sua carreira?</h2>
         <span className='dark:text-gray-400 text-gray-600 z-10 text-center justify-center items-center text-sm flex w-full max-w-[750px]'>Nossa reputação como uma das melhores escolas de inglês nacionais não é a toa.</span>
         </div>
         <div className=" flex-col gap-8  flex w-full">
